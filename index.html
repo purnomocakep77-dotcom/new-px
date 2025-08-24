@@ -3,141 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loading...</title>
+  <title>Pilih Tujuan</title>
 
-<head>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;
+    var ttq=w[t]=w[t]||[];
+    ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+    ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
+    for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+    ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+    ttq.load=function(e,n){
+      var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+      var o=n&&n.partner;
+      ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r;
+      ttq._t=ttq._t||{},ttq._t[e]=+new Date;
+      ttq._o=ttq._o||{},ttq._o[e]=n||{};
+      n=document.createElement("script");
+      n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;
+      e=document.getElementsByTagName("script")[0];
+      e.parentNode.insertBefore(n,e)
+    };
+    ttq.load('D2KKA7RC77U0CGBH8E0G'); // Ganti dengan TikTok Pixel ID lu
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+
+  <!-- Meta Pixel Code Start -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '7779394064738566'); // Ganti dengan Meta Pixel ID lu
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=7779394064738566&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       text-align: center;
       padding: 50px;
-      height: 100vh;
-      margin: 0;
-
-      /* Background gradient animasi */
-      background: linear-gradient(270deg, #6a11cb, #2575fc, #ff6a00, #ee0979);
-      background-size: 800% 800%;
-      animation: gradientBG 15s ease infinite;
-      color: white;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .box {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      display: inline-block;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.2em;
-      letter-spacing: 2px;
+      background: linear-gradient(135deg, #ff4d4d, #ff9966);
       color: #fff;
-      text-transform: uppercase;
-      text-shadow: 0px 0px 12px rgba(255,255,255,0.8);
     }
-
-    p {
-      font-size: 1.1em;
-      color: #f1f1f1;
-      margin-bottom: 25px;
-    }
-
-    .btn {
+    .box {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
       display: inline-block;
-      padding: 14px 30px;
-      background: #ff6a00;
-      color: white;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 1.1em;
-      margin: 12px;
-      font-family: 'Poppins', sans-serif;
+      backdrop-filter: blur(8px);
+    }
+    h2 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+    button {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 26px;
+      background: #fff;
+      color: #ff4d4d;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
       cursor: pointer;
-      transition: 0.3s;
-      position: relative;
-      box-shadow: 0 0 15px rgba(255, 106, 0, 0.6);
-      animation: pulse 2s infinite;
+      transition: all 0.3s ease;
+      font-size: 16px;
     }
-
-    .btn:hover {
-      background: #ff3c00;
-      transform: scale(1.08);
-      box-shadow: 0 0 25px rgba(255, 106, 0, 0.9);
-    }
-
-    /* Animasi glow berdenyut */
-    @keyframes pulse {
-      0% { box-shadow: 0 0 10px rgba(255,106,0,0.6); }
-      50% { box-shadow: 0 0 25px rgba(255,106,0,1); }
-      100% { box-shadow: 0 0 10px rgba(255,106,0,0.6); }
+    button:hover {
+      background: #ff6666;
+      color: white;
+      transform: scale(1.05);
     }
   </style>
-
 </head>
+<body>
 
-<!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+  <div class="box">
+    <h2>🚀 Pilih Tujuan Anda</h2>
+    <p>Silakan klik salah satu tombol di bawah:</p>
 
-
-  ttq.load('D2KKA7RC77U0CGBH8E0G');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1134045688598258');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1134045688598258&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-</head>
-<body style="font-family:sans-serif; text-align:center; margin-top:50px;">
-
-  <h2>🚀 Pilih Tujuan Anda</h2>
-  <p>Silakan klik salah satu tombol di bawah:</p>
-
-  <button onclick="goTo('Website')">🌐 Masuk Website</button>
-  <button onclick="goTo('WhatsApp')">💬 Chat WhatsApp</button>
-  <button onclick="goTo('Telegram')">📝 Isi Telegram</button>
+    <button onclick="goTo('Website')">🌐 Masuk Website</button>
+    <button onclick="goTo('WhatsApp')">💬 Chat WhatsApp</button>
+    <button onclick="goTo('Telegram')">📢 Join Telegram</button>
+  </div>
 
   <script>
     function goTo(target) {
-      // tracking TikTok
+      // Tracking TikTok
       ttq.track("ClickButton", {button: target});
+      
+      // Tracking Meta
+      fbq('trackCustom', 'ClickButton', {button: target});
 
-      // redirect sesuai tombol
+      // Redirect sesuai tombol
       if (target === "Website") {
-        window.location.href = "https://luang.in/hoala";
+        window.location.href = "https://payung57.agency/";
       } else if (target === "WhatsApp") {
         window.location.href = "https://payung.in/wa";
       } else if (target === "Telegram") {
